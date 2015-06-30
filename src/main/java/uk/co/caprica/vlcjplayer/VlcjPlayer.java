@@ -39,6 +39,7 @@ import uk.co.caprica.vlcjplayer.view.debug.DebugFrame;
 import uk.co.caprica.vlcjplayer.view.effects.EffectsFrame;
 import uk.co.caprica.vlcjplayer.view.main.MainFrame;
 import uk.co.caprica.vlcjplayer.view.messages.NativeLogFrame;
+import uk.co.caprica.vlcjplayer.view.synchornization.SynchronizeFrame;
 
 /**
  * Application entry-point.
@@ -63,12 +64,14 @@ public class VlcjPlayer {
     @SuppressWarnings("unused")
     private final JFrame messagesFrame;
 
+
     @SuppressWarnings("unused")
     private final JFrame effectsFrame;
 
     @SuppressWarnings("unused")
     private final JFrame debugFrame;
 
+    private final JFrame synchronizeFrame;
     private final NativeLog nativeLog;
 
     public static void main(String[] args) throws InterruptedException {
@@ -130,6 +133,8 @@ public class VlcjPlayer {
         messagesFrame = new NativeLogFrame(nativeLog);
         effectsFrame = new EffectsFrame();
         debugFrame = new DebugFrame();
+        synchronizeFrame =new SynchronizeFrame();
+
     }
 
     private void start() {
