@@ -57,6 +57,7 @@ import net.miginfocom.swing.MigLayout;
 import uk.co.caprica.vlcj.component.EmbeddedMediaPlayerComponent;
 import uk.co.caprica.vlcj.player.MediaPlayer;
 import uk.co.caprica.vlcj.player.MediaPlayerEventAdapter;
+import uk.co.caprica.vlcjplayer.ShowSynchronizeFrameEvent;
 import uk.co.caprica.vlcjplayer.event.AfterExitFullScreenEvent;
 import uk.co.caprica.vlcjplayer.event.BeforeEnterFullScreenEvent;
 import uk.co.caprica.vlcjplayer.event.PausedEvent;
@@ -96,6 +97,7 @@ public final class MainFrame extends BaseFrame {
     private final Action toolsEffectsAction;
     private final Action toolsMessagesAction;
     private final Action toolsDebugAction;
+    private final Action toolsSynchronize;
 
     private final StandardAction viewStatusBarAction;
 
@@ -223,6 +225,13 @@ public final class MainFrame extends BaseFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 application().post(ShowDebugEvent.INSTANCE);
+            }
+        };
+        toolsSynchronize=new StandardAction(resource("menu.tools.item.synchronize")) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                application().post(ShowSynchronizeFrameEvent.INSTANCE);
+
             }
         };
 
@@ -366,6 +375,7 @@ public final class MainFrame extends BaseFrame {
         toolsMenu.setMnemonic(resource("menu.tools").mnemonic());
         toolsMenu.add(new JMenuItem(toolsEffectsAction));
         toolsMenu.add(new JMenuItem(toolsMessagesAction));
+        toolsMenu.add(new JMenuItem(toolsSynchronize));
         toolsMenu.add(new JSeparator());
         toolsMenu.add(new JMenuItem(toolsDebugAction));
         menuBar.add(toolsMenu);
