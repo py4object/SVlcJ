@@ -7,9 +7,7 @@ import uk.co.caprica.vlcjplayer.view.BaseFrame;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Created by kozo on 6/30/15.
- */
+
 public class SynchronizeFrame extends BaseFrame {
     private JButton jbConnect;
     private JTextField jtServer;
