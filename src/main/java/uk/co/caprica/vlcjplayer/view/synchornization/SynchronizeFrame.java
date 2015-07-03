@@ -26,6 +26,7 @@ public class SynchronizeFrame extends BaseFrame {
         panel.add(jbConnect);
         add(panel);
         pack();
+        ///
     }
     @Subscribe
     public void ShowFrame(ShowSynchronizeFrameEvent e){
