@@ -54,6 +54,7 @@ public final class Application {
     private final MediaPlayerActions mediaPlayerActions;
 
     private final ScheduledExecutorService tickService = Executors.newSingleThreadScheduledExecutor();
+    public static boolean isOnSynchronization =false;
 
     private final Deque<String> recentMedia = new ArrayDeque<>(MAX_RECENT_MEDIA_SIZE);
 
