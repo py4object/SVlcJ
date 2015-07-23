@@ -1,7 +1,7 @@
 svlcj-player
 ===========
 
-Svlcj is  built on  the top off ![vlcj-player] (https://github.com/caprica/vlcj-player)
+Svlcj is  built on  the top off [vlcj-player] (https://github.com/caprica/vlcj-player)
 
 The main goal of the project is to provide an platform independent media player that 
 that can be sanforized using Server/Client model  
@@ -9,11 +9,11 @@ that can be sanforized using Server/Client model
 Screenshot
 ----------
 
-![vlcj-player](https://github.com/caprica/vlcj-player/raw/master/doc/vlcj-player.png "vlcj-player")
+![svlcj-player](https://github.com/py4object/SVlcJ/blob/master/Screenshot.png " svlcj-player")
 
 Features
 --------
- -synchronizable 
+ - synchronizable 
  - audio player
  - video player
  - full-screen
@@ -48,7 +48,7 @@ This project is currently a work-in-progress.
 
 If you execute "mvn install" or "mvn package", you will get a distribution
 package that you can unpack. This will give you the vlcj-player application jar
-and all of the dependencies - you can simply execute `java -jar vlcj-player-1.0.0-SNAPSHOT.jar`
+and all of the dependencies - you can simply execute `java -jar svlcj-player-1.0.0-SNAPSHOT.jar`
 and the application should start.
 
 On the other hand, just run it from an Eclipse project.
