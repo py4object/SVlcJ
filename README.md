@@ -3,7 +3,7 @@ svlcj-player
 
 Svlcj is  built on  the top off [vlcj-player] (https://github.com/caprica/vlcj-player)
 
-The main goal of the project is to provide an platform independent media player that 
+The main goal of the project is to provide a platform independent media player that 
 that can be sanforized using Server/Client model  
 
 Screenshot
