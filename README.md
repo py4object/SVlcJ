@@ -4,7 +4,7 @@ svlcj-player
 Svlcj is  built on  the top off [vlcj-player] (https://github.com/caprica/vlcj-player)
 
 The main goal of the project is to provide a platform independent media player that 
-that can be synchronized using Server/Client model  
+that can be synchronized using [Server](https://github.com/py4object/SVlcJ-Server)/[Client](https://github.com/py4object/SVlcJ) model  
 
 Screenshot
 ----------
