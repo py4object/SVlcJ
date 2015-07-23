@@ -39,6 +39,7 @@ import uk.co.caprica.vlcjplayer.view.debug.DebugFrame;
 import uk.co.caprica.vlcjplayer.view.effects.EffectsFrame;
 import uk.co.caprica.vlcjplayer.view.main.MainFrame;
 import uk.co.caprica.vlcjplayer.view.messages.NativeLogFrame;
+import uk.co.caprica.vlcjplayer.view.synchornization.SynchornizationEventHandler;
 import uk.co.caprica.vlcjplayer.view.synchornization.SynchronizeFrame;
 
 /**
@@ -117,6 +118,7 @@ public class VlcjPlayer {
                     nativeStreams.release();
                 }
                 application().post(ShutdownEvent.INSTANCE);
+
             }
 
             @Override
@@ -134,6 +136,9 @@ public class VlcjPlayer {
         effectsFrame = new EffectsFrame();
         debugFrame = new DebugFrame();
         synchronizeFrame =new SynchronizeFrame();
+        synchronizeFrame.setLocationRelativeTo(mainFrame);
+        Application.application().subscribe(new SynchornizationEventHandler(mediaPlayerComponent.getMediaPlayer()));
+
 
     }
 

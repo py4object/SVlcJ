@@ -33,10 +33,12 @@ import javax.swing.event.ChangeListener;
 
 import net.miginfocom.swing.MigLayout;
 import uk.co.caprica.vlcj.player.MediaPlayer;
+import uk.co.caprica.vlcjplayer.Application;
 import uk.co.caprica.vlcjplayer.event.TickEvent;
 import uk.co.caprica.vlcjplayer.view.StandardLabel;
 
 import com.google.common.eventbus.Subscribe;
+import uk.co.caprica.vlcjplayer.view.synchornization.Client;
 
 final class PositionPane extends JPanel {
 
@@ -68,17 +70,32 @@ final class PositionPane extends JPanel {
         positionSlider.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
-                if (!positionChanging.get()) {
-                    JSlider source = (JSlider) e.getSource();
-                    if (source.getValueIsAdjusting()) {
-                        sliderChanging.set(true);
+
+                if (!Application.isOnSynchronization) {
+                    if (!positionChanging.get()) {
+                        JSlider source = (JSlider) e.getSource();
+                        if (source.getValueIsAdjusting()) {
+                            sliderChanging.set(true);
+                        } else {
+                            sliderChanging.set(false);
+                        }
+                        mediaPlayer.setPosition(source.getValue() / 1000.0f);
                     }
-                    else {
-                        sliderChanging.set(false);
-                    }
-                    mediaPlayer.setPosition(source.getValue() / 1000.0f);
                 }
+                else{
+                    if (!positionChanging.get()) {
+                        JSlider source = (JSlider) e.getSource();
+                        if (source.getValueIsAdjusting()) {
+                            sliderChanging.set(true);
+                        } else {
+                            sliderChanging.set(false);
+                        }
+                        Client.getClient().broadcastEvent(new uk.co.caprica.vlcjplayer.synchronizationEvents.TickEvent(source.getValue() ));
+                    }
+                }
+
             }
+
         });
 
         durationLabel = new StandardLabel("9:99:99");
