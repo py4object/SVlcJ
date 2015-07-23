@@ -136,6 +136,7 @@ public class VlcjPlayer {
         effectsFrame = new EffectsFrame();
         debugFrame = new DebugFrame();
         synchronizeFrame =new SynchronizeFrame();
+        synchronizeFrame.setLocationRelativeTo(mainFrame);
         Application.application().subscribe(new SynchornizationEventHandler(mediaPlayerComponent.getMediaPlayer()));
 
 

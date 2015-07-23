@@ -7,12 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65a7a436-b5f5-4940-b3d5-d047c89c3856" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/vlcj_player_jar/vlcj-player.jar" afterPath="$PROJECT_DIR$/out/artifacts/vlcj_player_jar/vlcj-player.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java" afterPath="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties" afterPath="$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vlcj-player.iws" />
@@ -39,8 +41,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding />
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,11 +63,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27152318">
+              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vlcj-player.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.264706">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SynchornizationEventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="416" column="38" selection-start-line="416" selection-start-column="38" selection-end-line="416" selection-end-column="38" />
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#515#516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VlcjPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="56" selection-start-line="138" selection-start-column="56" selection-end-line="138" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SynchronizeFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -72,29 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SynchornizationEventHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.561753">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PausedEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PausedEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="126" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -104,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +145,8 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="false" />
+                <element signature="e#219#220#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -154,22 +181,22 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchoriazeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/ShowSynchronizeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/ShowSynchronizeFrameEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/BaseFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/SynchronizationEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/SynchronizedEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PausedEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PlayingEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/TickEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java" />
       </list>
     </option>
   </component>
@@ -189,10 +216,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="154" />
-    <option name="y" value="98" />
-    <option name="width" value="1356" />
-    <option name="height" value="555" />
+    <option name="y" value="28" />
+    <option name="width" value="1366" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,7 +243,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -415,7 +440,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="synchronizationEvents" />
+              <option name="myItemId" value="time" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -436,9 +461,14 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assembly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -465,6 +495,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SVlcJ-Server" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -694,8 +725,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="154" y="98" width="1356" height="555" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="28" width="1366" height="740" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -705,10 +736,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30731708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18319328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2739496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18147014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21580547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -719,7 +751,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -763,6 +794,8 @@
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -966,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.6086957">
@@ -1002,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1030,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PlayingEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33834586">
@@ -1051,10 +1063,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PausedEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="416" column="38" selection-start-line="416" selection-start-column="38" selection-end-line="416" selection-end-column="38" />
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/TickEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#192#193#0" expanded="false" />
+            <element signature="e#219#220#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="126" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1070,31 +1111,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/PausedEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/strings/vlcj-player.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state vertical-scroll-proportion="-10.264706">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/action/mediaplayer/PlayAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/VlcjPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="138" column="56" selection-start-line="138" selection-start-column="56" selection-end-line="138" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/synchronizationEvents/TickEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchronizeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1102,26 +1150,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/PositionPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="32" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/synchornization/SynchornizationEventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.561753">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/co/caprica/vlcjplayer/view/main/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27152318">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

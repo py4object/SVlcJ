@@ -23,6 +23,9 @@ public class Client extends Thread{
         INSTANCE=new Client(address,port);
         return INSTANCE;
     }
+    public static void disconnect(){
+        INSTANCE=null;
+    }
     private Client(String ip,int port){
         this.ip=ip;
         this.port=port;
@@ -80,7 +83,7 @@ public class Client extends Thread{
         return -1;
     }
 
-    public static Client makeNewConnection() {
+    public static Client getClient() {
         return INSTANCE;
     }
 }

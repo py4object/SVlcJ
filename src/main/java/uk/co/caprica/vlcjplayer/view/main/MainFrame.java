@@ -74,6 +74,7 @@ import uk.co.caprica.vlcjplayer.view.action.mediaplayer.MediaPlayerActions;
 import uk.co.caprica.vlcjplayer.view.snapshot.SnapshotView;
 
 import com.google.common.eventbus.Subscribe;
+import uk.co.caprica.vlcjplayer.view.synchornization.Client;
 
 @SuppressWarnings("serial")
 public final class MainFrame extends BaseFrame {
@@ -98,6 +99,7 @@ public final class MainFrame extends BaseFrame {
     private final Action toolsMessagesAction;
     private final Action toolsDebugAction;
     private final Action toolsSynchronize;
+    private final Action toolsDisconnect;
 
     private final StandardAction viewStatusBarAction;
 
@@ -231,6 +233,19 @@ public final class MainFrame extends BaseFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 application().post(ShowSynchronizeFrameEvent.INSTANCE);
+                toolsMenu.remove(2);
+                toolsMenu.add(new JMenuItem(toolsDisconnect),2);
+
+            }
+        };
+        toolsDisconnect =new StandardAction(resource("menu.tools.item.disconnect")) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                application().isOnSynchronization=false;
+                Client.disconnect();
+                toolsMenu.remove(2);
+                toolsMenu.add(new JMenuItem(toolsSynchronize),2);
+
 
             }
         };
@@ -376,6 +391,7 @@ public final class MainFrame extends BaseFrame {
         toolsMenu.add(new JMenuItem(toolsEffectsAction));
         toolsMenu.add(new JMenuItem(toolsMessagesAction));
         toolsMenu.add(new JMenuItem(toolsSynchronize));
+
         toolsMenu.add(new JSeparator());
         toolsMenu.add(new JMenuItem(toolsDebugAction));
         menuBar.add(toolsMenu);

@@ -7,7 +7,7 @@ import uk.co.caprica.vlcjplayer.synchronizationEvents.PlayingEvent;
 import uk.co.caprica.vlcjplayer.synchronizationEvents.TickEvent;
 
 /**
- * Created by kozo on 7/3/15.
+ * This class is used to handle events sent by the server.
  */
 public class SynchornizationEventHandler {
     MediaPlayer mPlayer;
@@ -17,37 +17,32 @@ public class SynchornizationEventHandler {
     @Subscribe
     public void OnPausedEvent(uk.co.caprica.vlcjplayer.synchronizationEvents.PausedEvent e){
         long i;
-        float elay=calculateDelay((i=Client.makeNewConnection().getServerTime() - e.getTime()));
-        System.out.println(elay +" "+i);
+        float elay=calculateDelay((i=Client.getClient().getServerTime() - e.getTime()));
         mPlayer.setPosition(elay);
-
         mPlayer.pause();
-
     }
 
     @Subscribe
     public void onPlayingEvent(PlayingEvent e)
 
-    {    long i;
-        float elay=calculateDelay((i=Client.makeNewConnection().getServerTime() - e.getTime()));
-        System.out.println(elay +" "+i);
+    {
+        long i;
+        float elay=calculateDelay((i=Client.getClient().getServerTime() - e.getTime()));
         mPlayer.setPosition(elay);
-
         mPlayer.play();
     }
     @Subscribe
     public void OnTickEvent(TickEvent e){
-        long i=(Client.makeNewConnection().getServerTime() - e.getTime());
+        long i=(Client.getClient().getServerTime() - e.getTime());
 
        float postion=(e.getValue() / 1000.0f);
         mPlayer.setPosition((postion)+i/mPlayer.getLength());;
-        System.out.println("Tick");
+
     }
     public float calculateDelay(long delay){
         float postion=mPlayer.getPosition();
         float length=mPlayer.getLength();
         float currentPostion=(postion*length)+delay;
-
         return currentPostion/length;
 
     }
