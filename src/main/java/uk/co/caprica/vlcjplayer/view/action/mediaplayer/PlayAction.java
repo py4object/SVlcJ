@@ -44,9 +44,9 @@ final class PlayAction extends MediaPlayerAction {
             }
         } else {
             if (!mediaPlayer.isPlaying()) {
-                Client.getClient().broadcastEvent(PlayingEvent.INSTANCE);
+                Client.makeNewConnection().broadcastEvent(new PlayingEvent());
             } else {
-                Client.getClient().broadcastEvent(PausedEvent.INSTANCE);
+                Client.makeNewConnection().broadcastEvent(new PausedEvent());
             }
         }
     }

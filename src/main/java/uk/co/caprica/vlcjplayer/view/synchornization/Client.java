@@ -4,7 +4,8 @@ import uk.co.caprica.vlcjplayer.Application;
 import uk.co.caprica.vlcjplayer.synchronizationEvents.SynchronizedEvent;
 
 import java.io.*;
-import java.net.Socket;
+import java.net.*;
+import java.nio.ByteBuffer;
 
 /**
  * Created by kozo on 7/3/15.
@@ -16,10 +17,10 @@ public class Client extends Thread{
     private ObjectOutputStream outputStream;
     private ObjectInputStream inputStream;
     private static Client INSTANCE;
-    public static Client getClient(String address,int port){
-            if(INSTANCE ==null){
-                INSTANCE=new Client(address,port);
-            }
+    DatagramSocket timeSocket;
+    public static Client makeNewConnection(String address, int port){
+
+        INSTANCE=new Client(address,port);
         return INSTANCE;
     }
     private Client(String ip,int port){
@@ -31,6 +32,7 @@ public class Client extends Thread{
             inputStream=new ObjectInputStream(mSocket.getInputStream());
             outputStream=new ObjectOutputStream(mSocket.getOutputStream());
             Application.isOnSynchronization=true;
+             timeSocket=new DatagramSocket();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -44,7 +46,7 @@ public class Client extends Thread{
                 msg=inputStream.readObject();
                 Application.application().post(msg);
             }catch (EOFException e){
-
+                //No event been sent on the stream
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -62,8 +64,23 @@ public class Client extends Thread{
         }
     }
 
+    public long getServerTime(){
+        byte [] buff=new byte[250];
+        try {
+            DatagramPacket packet=new DatagramPacket(buff,buff.length, InetAddress.getByName(ip),port-1);
+            timeSocket.send(packet);
+            packet=new DatagramPacket(buff,buff.length);
+            timeSocket.receive(packet);
+            return ByteBuffer.wrap(packet.getData()).getLong();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
 
-    public static Client getClient() {
+    public static Client makeNewConnection() {
         return INSTANCE;
     }
 }

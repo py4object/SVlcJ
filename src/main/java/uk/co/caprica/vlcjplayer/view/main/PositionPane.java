@@ -90,7 +90,7 @@ final class PositionPane extends JPanel {
                         } else {
                             sliderChanging.set(false);
                         }
-                        Client.getClient().broadcastEvent(new uk.co.caprica.vlcjplayer.synchronizationEvents.TickEvent(source.getValue() ));
+                        Client.makeNewConnection().broadcastEvent(new uk.co.caprica.vlcjplayer.synchronizationEvents.TickEvent(source.getValue() ));
                     }
                 }
 

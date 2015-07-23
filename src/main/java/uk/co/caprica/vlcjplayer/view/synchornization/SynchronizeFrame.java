@@ -1,7 +1,6 @@
 package uk.co.caprica.vlcjplayer.view.synchornization;
 
 import com.google.common.eventbus.Subscribe;
-import uk.co.caprica.vlcjplayer.Application;
 import uk.co.caprica.vlcjplayer.ShowSynchronizeFrameEvent;
 import uk.co.caprica.vlcjplayer.view.BaseFrame;
 
@@ -30,7 +29,7 @@ public class SynchronizeFrame extends BaseFrame {
         jbConnect.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Client.getClient(jtServer.getText(),Integer.valueOf(jtPort.getText())).start();
+                Client.makeNewConnection(jtServer.getText(), Integer.valueOf(jtPort.getText())).start();
                 setVisible(false);
 
             }
